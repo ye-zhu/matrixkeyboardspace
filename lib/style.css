@@ -1,0 +1,320 @@
+html {
+    height: 100%;
+}
+
+body{
+    background-image: url(./assets/travelingthoughts.jpg);
+    background-repeat: repeat;;
+    background-size: 100%;
+    margin: 0 auto;
+    font-family: 'Codystar', cursive;
+    font-weight: 900;
+    -webkit-animation: backgroundScroll 2000s linear infinite;
+}
+
+@-webkit-keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: 0 90000px ;}
+}
+
+#cursorDiv {
+  background-image: url('./assets/pointer.png');
+  z-index:1;
+  pointer-events: none;
+  position:relative;
+  height: 120px;
+  width: 120px;
+  margin-left: -150px;
+  background-size: auto;
+  position: absolute;
+}
+
+#introMarquee {
+  font-size: 30px;
+  color:black;
+  text-shadow: 3px 3px white;
+  margin-bottom: 20px;
+  /*transform: rotate(-90deg);*/
+}
+
+input[type=text] {
+  font-size: 30px;
+  color:orange;
+  font-family: monospace;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  background: rgba(1, 1, 1, 0.6);
+  -webkit-box-shadow: 0 0 3px #468db3;
+  outline: none;
+  -webkit-box-shadow: inset 0 0 10px #468db3;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-left: 180px;
+  margin-bottom: 30px;
+  width: 400px;
+  height: 50px;
+}
+
+.submitButton {
+  margin-left: 10px;
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  background: red;
+  outline: none;
+  -webkit-box-shadow: 0 0 3px #468db3;
+  -webkit-box-shadow: inset 0 0 10px #468db3;
+  border-radius: 5px;
+}
+
+.playGame {
+  font-size: 40px;
+  color: yellow;
+  text-shadow: 3px 3px red;
+  width: 180px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 5px;
+  padding-left: 60px;
+  background: rgba(99, 1, 1, 0.6);
+  outline: none;
+  -webkit-box-shadow: 0 0 3px #468db3;
+  -webkit-box-shadow: inset 0 0 10px #468db3;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.playGame:hover {
+  background: rgba(255, 1, 1, 0.6);
+}
+
+.playerNames {
+  hyphens: auto;
+  max-width: 830px;
+  margin-left: 40px;
+  font-size: 40px;
+  color: yellow;
+  text-shadow: 3px 3px red;
+
+}
+
+.logInScreen {
+  width: 780px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.gameTitle {
+  font-size: 80px;
+  text-shadow: 5px 5px red;
+  color: yellow;
+  margin-bottom: 10px;
+}
+
+::-moz-selection{
+  background-color:Transparent;
+}
+
+::selection {
+  background-color:Transparent;
+}
+
+
+#root {
+
+}
+
+.view {
+
+}
+
+
+.textArea {
+  background: rgba(14, 47, 66, 0.6);
+  /*opacity: 0.5;*/
+  /*background: #144766;*/
+  display: flex;
+  overflow: hidden;
+  bottom: 0;
+  height: 100px;
+  width: 840px;
+  padding: 10px;
+  /*border: 1px solid #468db3;*/
+  -webkit-box-shadow: 0 0 3px #468db3;
+  -webkit-box-shadow: inset 0 0 10px #468db3;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: orange;
+}
+
+@-webkit-keyframes fade-in{
+from{
+    opacity:0;
+    top:0px;
+}
+to{
+    opacity:1;
+    top:-5px;
+}
+}
+
+.bottomTextArea {
+  margin-top: 510px;
+}
+
+.bottomText{
+  display: inline-block;
+  clear:both;
+  float:left;
+  max-width: 830px;
+  background: rgba(14, 47, 66, 0.9);
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 1px;
+  padding: 0 5px 0 5px;
+  color: orange;
+  text-transform: uppercase;
+}
+
+
+
+.keyboard {
+  margin: 0 auto;
+  padding: 30px;
+  color: red;
+  width: 1000px;
+}
+
+.keyboardKey:hover {
+  background-image: url(./assets/hover.png);
+  opacity: .8;
+  color: yellow;
+  background-size:100% 100%;
+}
+
+.keyboardKey {
+  /*opacity: .9;*/
+  /*background: #144766;*/
+  background-image: url(./assets/button.png);
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  width: 85px;
+  /*border: 1px solid #468db3;*/
+  /*-webkit-box-shadow: 0 0 3px #468db3;
+  -webkit-box-shadow: inset 0 0 6px #468db3;*/
+  padding-top: 10px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: url(./assets/pointer.gif);
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+}
+
+.keyboardRow {
+  text-align: center;
+  font-size: 45px;
+  margin: auto;
+  display: flex;
+  width: 1000px;
+  height: 80px;
+}
+
+.idx0 .keyboardKey {
+  font-size: 30px;
+  height: 45px;
+  padding-top: 5px;
+}
+
+.idx1 {
+  margin-top: -28px;
+}
+
+.idx2 {
+  width: 900px;
+}
+
+.idx3 {
+  width: 800px;
+}
+
+.idx4 {
+  width: 950px;
+}
+
+.idx5 {
+  margin-bottom: 25px;
+  width: 700px;
+}
+
+.idx6 {
+  display: block;
+  margin-top: -475px;
+  margin-left: 870px;
+  width: auto;
+}
+
+.idx6 .keyboardKey {
+  padding-bottom: 18px;
+  font-size: 25px;
+  width: 200px;
+}
+
+.idx7 {
+  display: block;
+  margin-top: -200px;
+  margin-left: 1000px;
+  padding-top: -30px;
+  width: 30px;
+}
+
+.idx7 .keyboardKey .keyboardRow .keyboard{
+  font-size: 35px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+#addPlayerBox {
+  position: absolute;
+  font-size: 20px;
+  margin-left: 876px;
+  margin-top: -15px;
+  width: 170px;
+  height: 40px;
+}
+
+.space {
+  background-image: url(./assets/space.png);
+  font-size: 0px;
+  width: 600px;
+}
+
+.space:hover{
+    background-image: url(./assets/spaceHover.png);
+}
+
+.backspace {
+  padding-top: 20px;
+  font-size: 30px;
+  width: 200px;
+}
+
+.clearscreen {
+  padding-top: 20px;
+  font-size: 30px;
+  width: 250px;
+}
+
+.YES {
+  width: 150px;
+}
+
+.NO {
+  width: 150px;
+}
